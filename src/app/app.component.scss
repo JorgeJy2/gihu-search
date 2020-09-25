@@ -1,0 +1,48 @@
+.main {
+  box-sizing: border-box;
+  min-height:  100vh ;
+  background-color: rgb(247, 247, 247);
+  padding: 25px;
+  
+  .container {
+    max-width: 500px;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    overflow-x: hidden;
+  }
+  .container >* {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.container-progress-spinner {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.container-title {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+  * {
+    margin-bottom: 20px;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.fild-full-width {
+  width: 100%;
+}

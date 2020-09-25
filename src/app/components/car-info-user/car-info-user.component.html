@@ -1,0 +1,43 @@
+<mat-card class="card-info-user-github" @routerTransition>
+  <mat-card-header>
+    <mat-card-title>{{infoUser.name}}</mat-card-title>
+    <mat-card-subtitle>{{infoUser.login}}</mat-card-subtitle>
+  </mat-card-header>
+  <img class="image-user" mat-card-image [src]="infoUser.avatar_url" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p class="info-user">
+      {{infoUser.bio}}
+    </p>
+    <mat-chip-list>
+      <mat-chip selected>
+        Followers: {{infoUser.followers}}
+      </mat-chip>
+      <mat-chip selected>
+        Following: {{infoUser.following}}
+      </mat-chip>
+      <mat-chip selected>
+        Public repos: {{infoUser.public_repos}}
+      </mat-chip>
+      <mat-chip *ngIf="infoUser.location">
+        Location: {{infoUser.location}}
+      </mat-chip>
+      <mat-chip>
+        Created at: {{infoUser.created_at  | date:'shortDate'}}
+      </mat-chip>
+    </mat-chip-list>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <a *ngIf="infoUser.blog" [href]="infoUser.blog">
+      <button mat-raised-button>
+        <mat-icon svgIcon="world">world</mat-icon>
+        Blog
+      </button>
+    </a>
+    <a [href]="infoUser.html_url">
+      <button mat-raised-button color="primary">
+        <mat-icon svgIcon="git-hub">git-hub</mat-icon>
+        Git-Hub
+      </button>
+    </a>
+  </mat-card-actions>
+</mat-card>

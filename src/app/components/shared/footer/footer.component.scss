@@ -1,0 +1,23 @@
+.footer {
+  text-align: center;
+  color: #a8a8a8;
+  font-size: 1.2em;
+  letter-spacing: 0.15em;
+
+  .container-info {
+    a {
+      color: #a8a8a8;
+      text-decoration: none;
+    }
+
+    .year {
+      font-weight: bold;
+    }
+  }
+
+  .container-social-network {
+    a {
+      margin: 0 5px;
+    }
+  }
+}

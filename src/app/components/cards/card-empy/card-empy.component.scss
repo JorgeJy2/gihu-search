@@ -1,0 +1,33 @@
+
+.card-info-user-github {
+  // max-width: 100%;
+  .image-user{
+    width: 100%;
+    margin: 0;
+  }
+
+  padding: 30px;
+
+  mat-card-header {
+    mat-card-title {
+      font-size: 2em;
+    }
+    mat-card-subtitle {
+      font-size: 1.5em;
+    }
+  }
+
+  mat-card-content {
+    .info-user{
+      font-size: 1.5em ;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+  }
+
+  mat-card-actions {
+    a {
+      margin: 0 5px;
+    }
+  }
+}
